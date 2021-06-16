@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>再生1層 ピザカットクイズ</h1>  
+    <h2>全部で10問</h2>  
+    <div id="quiz_index">1問目</div>
+    <div id="correct" name="correct">正解数：0</div>
+    <br>
+    <ul class="quiz-1" >
+        <li>
+            <img class="quiz" id="DA" name="暗闇の雲" id="darkness_1" src="right.jpg" width="100" height="100">
+        </li>
+        <li>
+            <img class="quiz" id="A" name="暗闇の雲" id="darkness_1" src="right.jpg" width="100" height="100">
+        </li>
+        <li>
+            <img class="quiz" id="AB" name="暗闇の雲" id="darkness_1" src="right.jpg" width="100" height="100">
+        </li>
+    </ul>
+
+    <br>
+    <ul class="quiz-2">
+        <li>
+            <img class="quiz" id="D" name="暗闇の雲" id="darkness_1" src="right.jpg" width="100" height="100">
+        </li>
+        <li>
+            <img class="field"  id="pic" src="field.jpg" width="400" height="300">
+        </li>
+        <li>
+            <img class="quiz" id="B" name="暗闇の雲" id="darkness_1" src="right.jpg" width="100" height="100">
+        </li>
+    </ul>
+
+    <br>
+    <ul class="quiz-3">
+        <li>
+            <img class="quiz" id="CD"  name="暗闇の雲" id="darkness_1" src="right.jpg" width="100" height="100">
+        </li>
+        <li>
+            <img class="quiz" id="C"  name="暗闇の雲" id="darkness_1" src="right.jpg" width="100" height="100">
+        </li>
+        <li>
+            <img class="quiz" id="BC" name="暗闇の雲" id="darkness_1" src="right.jpg" width="100" height="100">
+        </li>
+    </ul>
+
+<!--     
+    <img class="field" id="pic" src="FF14.jpg" width="400" height="300">
+    <img class="quiz" name="暗闇の雲" id="darkness_1" src="暗闇の雲.jpeg" width="100" height="100">
+    <br>
+    <img class="quiz" name="暗闇の雲" id="darkness_1" src="暗闇の雲.jpeg" width="100" height="100">
+    <img class="quiz" name="暗闇の雲" id="darkness_1" src="暗闇の雲.jpeg" width="100" height="100">
+    <img class="quiz" name="暗闇の雲" id="darkness_1" src="暗闇の雲.jpeg" width="100" height="100"> -->
+
+    
+    <!-- <br>
+    <input type="radio" name="select" value="↑">1
+    <input type="radio" name="select" value="↑">2
+    <input type="radio" name="select" value="↑">3
+    <input type="radio" name="select" value="↑">4
+    <input type="radio" name="select" value="↑">5
+    <input type="radio" name="select" value="↑">6
+    <input type="radio" name="select" value="↑">7
+    <input type="radio" name="select" value="↑">8
+    <input type="submit"  value="答える"> -->
+
+    <br>
+    <button name="button" value="1">1</button>
+    <button name="button" value="2">2</button>
+    <button name="button" value="3">3</button>
+    <button name="button" value="4">4</button>
+    <button name="button" value="5">5</button>
+    <button name="button" value="6">6</button>
+    <button name="button" value="7">7</button>
+    <button name="button" value="8">8</button>
+    <button value="なし" id="not">なし</button>
+    <button name="button" value="next" id="next">次へ</button>
+
+    <form method="POST" action="dbc.php">
+        <p>名前</p>
+        <input type="text" name = 'name'>
+  
+        <input type="hidden" name="hidden_correct" id='hidden_correct' value="0">
+        <input type="submit">
+        
+    
+    </form>
+
+    <form action="runking.php">
+        <input type="submit" value='ランキングを見る'>
+    </form>
+
+    
+    <script src="index.js?date=20190401"></script>
+</body>
+</html>

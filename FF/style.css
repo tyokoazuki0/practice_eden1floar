@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.quiz-1{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    flex-flow: row wrap;
+   
+  }
+  .quiz-1 li{
+    flex: 0 0 19%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  img{
+    width: 100%;
+  }
+
+  .quiz-2{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    flex-flow: row wrap;
+   
+  }
+  .quiz-2 li{
+    flex: 0 0 19%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  img{
+    width: 100%;
+  }
+
+  .quiz-3{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    flex-flow: row wrap;
+   
+  }
+  .quiz-3 li{
+    flex: 0 0 19%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  img{
+    width: 100%;
+  }
+
+  #pic {
+    height: 300px;
+    width: 300px;
+  }
+
+  #AB {
+    transform: rotate( 45deg );
+  }
+
+  #B {
+    margin-top: 100px;
+    transform: rotate( 90deg );
+  }
+
+  #BC {
+    transform: rotate( 135deg );
+  }
+
+  #C {
+    transform: rotate( 180deg );
+  }
+
+  #CD {
+    transform: rotate( -135deg );
+  }
+
+  #D {
+    margin-top: 100px;
+    transform: rotate( -90deg );
+  }
+
+  #DA {
+    transform: rotate( -45deg );
+  }
