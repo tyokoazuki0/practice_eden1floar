@@ -1,26 +1,61 @@
 body {
-    background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin: auto;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
 }
 
-.quiz-1{
+.title{
+  text-align:center;
+  margin:0 auto;
+  position:relative;
+}
+
+.title p{
+  position:  absolute;
+  color:  rgb(255, 255, 255);
+  text-shadow:
+    1px 1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px -1px 0 rgb(0, 0, 0);
+
+  width:  400px;              /* 幅指定 */
+  height: 30px;               /* 高さ指定 */
+  text-align:  center;        /* 文字を中央揃えに */
+  font-size: 30px;            /* フォントサイズ指定 */
+  top:  0;                    /* 上からの位置指定 */
+  bottom:  0;                 /* 下からの位置指定 */
+  left:  0;                   /* 左からの位置指定 */
+  right:  0;                  /* 右からの位置指定 */
+  margin:  auto;             
+}
+
+.title img{
+  height: 100px;
+  object-fit: cover;
+}
+
+.quiz{
     display: flex;
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
     justify-content: space-between;
     flex-flow: row wrap;
    
   }
-  .quiz-1 li{
+  /* .quiz{
     flex: 0 0 19%;
     border: 1px solid #ccc;
     margin-bottom: 10px;
-  }
-  img{
-    width: 100%;
-  }
+  }*/
 
-  .quiz-2{
+  /* img{
+    width: 100%;
+  } */
+
+  /* .quiz-2{
     display: flex;
     margin: 0;
     padding: 0;
@@ -54,7 +89,7 @@ body {
   }
   img{
     width: 100%;
-  }
+  } */
 
   #pic {
     height: 300px;

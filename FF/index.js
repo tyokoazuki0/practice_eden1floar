@@ -133,8 +133,6 @@ for(i = 0; i < 8; i++){
 //解なし
 let not_index = 0;
 
-
-
 document.getElementById('not').addEventListener('click',function(e){
 
     for(i = 0; i < 8 ; i++){
@@ -176,14 +174,15 @@ document.getElementById('next').addEventListener('click',function(e){
 });
 
 
+console.log(quiz);
 // 暗黒の雲の表示・非表示
 function set_field(){
     for(i=0; i < 8; i++){
     if(quiz[i] == 0){
-        document.getElementsByName("暗闇の雲")[i].style.display='none'
+        document.getElementsByName("暗闇の雲")[i].setAttribute('src','none.jpg');
     }
     else if(quiz[i] == 1){
-        document.getElementsByName("暗闇の雲")[i].style.display='block'
+        document.getElementsByName("暗闇の雲")[i].setAttribute('src','right.jpg');
     }
     }
 }
