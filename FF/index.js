@@ -163,11 +163,13 @@ document.getElementById('next').addEventListener('click',function(e){
         answer = [1,1,1,1,1,1,1,1];
         cal();
         console.log(answer);
-        document.getElementById("quiz_index").textContent = `${quiz_index}問目`;
-        document.getElementById("correct").textContent =  `正解数：${correct}`;
+        document.getElementById("quiz_index").textContent = quiz_index;
+        document.getElementById("correct").textContent = correct;
         document.getElementById( "hidden_correct" ).value = String(correct);  
     }
     else{
+        document.getElementById("quiz_index").textContent = quiz_index;
+        document.getElementById("correct").textContent = correct;
         document.getElementById("pic").src = "end.png";
     }
       
@@ -188,6 +190,22 @@ function set_field(){
 }
 set_field();
 
+let start_now = 0;
+let stop_now = 0;
+let difference = 0
+let difference_
+//ストップウォッチ
+document.getElementById("start").addEventListener('click',function(e){
+    start_now = Date.now();
+    console.log(start_now);
+});
 
+document.getElementById("stop").addEventListener('click',function(e){
+    stop_now = Date.now();
+    console.log(stop_now);
+    difference = stop_now - start_now;
+    difference = (difference/1000).toPrecision(2);
+    document.getElementById("time_display").textContent= `${difference}秒`;
+});
 
 

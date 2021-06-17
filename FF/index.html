@@ -11,24 +11,35 @@
         <img src="FF14.jpg" alt="">
         <p>再生1層 ピザカットクイズ</p>
     </div>
+
+    <div class="time">
+        <button id="start">スタート</button>
+        <button id="stop">ストップ</button>
+        <p id="time_display" >00:00</p>
+    </div>
+    
      
-    <div id="quiz_index">1問目</div>
-    <div id="correct" name="correct">正解数：0</div>
+    <div class="score">
+        <p id="correct" name="correct">0</p>
+        <p id="slash">/</p>
+        <p id="quiz_index">0</p>
+    </div>
+    
     <br>
-    <div class="quiz" >
-            <img class="quiz" id="DA" name="暗闇の雲" id="darkness_1"  width="100" height="100">
-            <img class="quiz" id="A" name="暗闇の雲" id="darkness_1"  width="100" height="100">
-            <img class="quiz" id="AB" name="暗闇の雲" id="darkness_1"  width="100" height="100">
+    <div class="quiz-1" >
+            <img id="DA" name="暗闇の雲" id="darkness_1"  width="100" height="100">
+            <img id="A" name="暗闇の雲" id="darkness_1"  width="100" height="100">
+            <img id="AB" name="暗闇の雲" id="darkness_1"  width="100" height="100">
     </div>
-    <div class="quiz" >
-            <img class="quiz" id="D" name="暗闇の雲" id="darkness_1"  width="100" height="100">
-            <img class="field"  id="pic" src="field.jpg" width="400" height="300">
-            <img class="quiz" id="B" name="暗闇の雲" id="darkness_1"  width="100" height="100">
+    <div class="quiz-2" >
+            <img  id="D" name="暗闇の雲" id="darkness_1"  width="100" height="100">
+            <img  id="pic" src="field.jpg" width="400" height="300">
+            <img  id="B" name="暗闇の雲" id="darkness_1"  width="100" height="100">
     </div>
-    <div class="quiz" >
-            <img class="quiz" id="CD"  name="暗闇の雲" id="darkness_1"  width="100" height="100">
-            <img class="quiz" id="C"  name="暗闇の雲" id="darkness_1"  width="100" height="100">
-            <img class="quiz" id="BC" name="暗闇の雲" id="darkness_1"  width="100" height="100">
+    <div class="quiz-3" >
+            <img id="CD"  name="暗闇の雲" id="darkness_1"  width="100" height="100">
+            <img id="C"  name="暗闇の雲" id="darkness_1"  width="100" height="100">
+            <img id="BC" name="暗闇の雲" id="darkness_1"  width="100" height="100">
     </div>
 
 <!--     
@@ -81,6 +92,6 @@
     </form>
 
     
-    <script src="index.js?date=202106162007"></script>
+    <script src="index.js?date=210607"></script>
 </body>
 </html>
