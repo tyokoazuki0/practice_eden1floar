@@ -39,36 +39,42 @@
             <th>順位</th>
             <th>名前</th>
             <th>正解数</th>
+            <th>タイム</th>
         </tr>
 
         <tr>
             <th>1</th>
             <th><?php echo $result[0]['name'] ?></th>
-            <th><?php echo $result[0]['correct'] ?></th>        
+            <th><?php echo $result[0]['correct'] ?></th>
+            <th><?php echo $result[0]['time'] ?></th> 
         </tr>
 
         <tr>
             <th>2</th>
             <th><?php echo $result[1]['name'] ?></th>
-            <th><?php echo $result[1]['correct'] ?></th>        
+            <th><?php echo $result[1]['correct'] ?></th>
+            <th><?php echo $result[1]['time'] ?></th>       
         </tr>
 
         <tr>
             <th>3</th>
             <th><?php echo $result[2]['name'] ?></th>
-            <th><?php echo $result[2]['correct'] ?></th>        
+            <th><?php echo $result[2]['correct'] ?></th>  
+            <th><?php echo $result[2]['time'] ?></th>       
         </tr>
 
         <tr>
             <th>4</th>
             <th><?php echo $result[3]['name'] ?></th>
-            <th><?php echo $result[3]['correct'] ?></th>        
+            <th><?php echo $result[3]['correct'] ?></th>   
+            <th><?php echo $result[3]['time'] ?></th>      
         </tr>
 
         <tr>
             <th>5</th>
             <th><?php echo $result[4]['name'] ?></th>
-            <th><?php echo $result[4]['correct'] ?></th>        
+            <th><?php echo $result[4]['correct'] ?></th>
+            <th><?php echo $result[4]['time'] ?></th>         
         </tr>
 
     </table>

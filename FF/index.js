@@ -168,6 +168,8 @@ document.getElementById('next').addEventListener('click',function(e){
         document.getElementById( "hidden_correct" ).value = String(correct);  
     }
     else{
+        stop();
+        document.getElementById( "hidden_time" ).value = difference; 
         document.getElementById("quiz_index").textContent = quiz_index;
         document.getElementById("correct").textContent = correct;
         document.getElementById("pic").src = "end.png";
@@ -195,17 +197,18 @@ let stop_now = 0;
 let difference = 0
 let difference_
 //ストップウォッチ
+
 document.getElementById("start").addEventListener('click',function(e){
+    for(i= 0;i < 10; i++){
+        document.getElementsByName("button")[i].style.opacity = 1;
+    }
     start_now = Date.now();
     console.log(start_now);
 });
 
-document.getElementById("stop").addEventListener('click',function(e){
+function stop(){
     stop_now = Date.now();
     console.log(stop_now);
     difference = stop_now - start_now;
     difference = (difference/1000).toPrecision(2);
-    document.getElementById("time_display").textContent= `${difference}秒`;
-});
-
-
+}

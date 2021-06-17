@@ -11,13 +11,7 @@
         <img src="FF14.jpg" alt="">
         <p>再生1層 ピザカットクイズ</p>
     </div>
-
-    <div class="time">
-        <button id="start">スタート</button>
-        <button id="stop">ストップ</button>
-        <p id="time_display" >00:00</p>
-    </div>
-    
+   
      
     <div class="score">
         <p id="correct" name="correct">0</p>
@@ -63,8 +57,12 @@
     <input type="submit"  value="答える"> -->
 
     <br>
-    <div>答え
-    <button name="button" value="1">1</button>
+    <div class="time">
+        <button id="start">スタート</button>
+    </div>
+
+    <br>
+    <button name="button" value="1" >1</button>
     <button name="button" value="2">2</button>
     <button name="button" value="3">3</button>
     <button name="button" value="4">4</button>
@@ -72,7 +70,7 @@
     <button name="button" value="6">6</button>
     <button name="button" value="7">7</button>
     <button name="button" value="8">8</button>
-    <button value="なし" id="not">逃げ場なし</button>
+    <button name="button" value="なし" id="not">逃げ場なし</button>
     <br>
     <button name="button" value="next" id="next">次の問題</button>
 
@@ -82,6 +80,7 @@
         <div>名前
         <input type="text" name = 'name'>
         <input type="hidden" name="hidden_correct" id='hidden_correct' value="0">
+        <input type="hidden" name="hidden_time" id='hidden_time' value="0">
         <input type="submit">
         
     

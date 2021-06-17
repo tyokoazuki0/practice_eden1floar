@@ -56,12 +56,13 @@
     ]);
         // echo '接続成功';
 
-        $sql = 'INSERT INTO user(id,name,correct)
-                values(:id,:name,:correct)';
+        $sql = 'INSERT INTO user(id,name,correct,time)
+                values(:id,:name,:correct,:time)';
         $stmt = $dbh->prepare($sql);
         $stmt->bindvalue(':id',4,PDO::PARAM_INT);
         $stmt->bindvalue(':name',$post['name'],PDO::PARAM_STR);
         $stmt->bindvalue(':correct',$post['hidden_correct'],PDO::PARAM_INT);
+        $stmt->bindvalue(':time',$post['hidden_time'],PDO::PARAM_STR);
         $stmt->execute();
 
         $result = $stmt->fetchall(PDO::FETCH_ASSOC);
@@ -85,5 +86,6 @@
 <body>
     <p>名前：<?php echo $post['name'] ?></p>
     <p>正解数：<?php echo $post['hidden_correct']?></p>
+    <p>時間：<?php echo $post['hidden_time']?></p>
 </body>
 </html>

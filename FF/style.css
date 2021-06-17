@@ -113,6 +113,14 @@ body {
   transform: rotate( -90deg );
 }
 
-  #DA {
-    transform: rotate( -45deg );
-  }
+#DA {
+  transform: rotate( -45deg );
+}
+
+.time {
+  text-align:center;
+}
+
+button[name="button"] {
+  opacity: 0;
+}
