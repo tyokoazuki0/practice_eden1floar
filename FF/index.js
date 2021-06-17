@@ -86,7 +86,7 @@ function check_and_create_quiz(){
     }
 
     }
-    console.log(quiz);
+    // console.log(quiz);
 }
 check_and_create_quiz();
 
@@ -122,6 +122,7 @@ for(i = 0; i < 8; i++){
             correct_se.play();
             correct++
             quiz_index++
+            console.log(`${correct}正解`);
         }
         else{
             document.getElementById("pic").src = "バツ.jpg";
@@ -149,9 +150,12 @@ document.getElementById('not').addEventListener('click',function(e){
     else{
         document.getElementById("pic").src = "丸.jpg";
         correct_se.play();
-        correct++
-        quiz_index++
+        correct++;
+        quiz_index++;
+        console.log(`${correct}正解`);
     }
+
+    
 
 });
 
@@ -164,21 +168,24 @@ document.getElementById('next').addEventListener('click',function(e){
         cal();
         console.log(answer);
         document.getElementById("quiz_index").textContent = quiz_index;
-        document.getElementById("correct").textContent = correct;
         document.getElementById( "hidden_correct" ).value = String(correct);  
     }
     else{
         stop();
+        document.getElementsByClassName("form")[0].style.opacity = 1;
+        
         document.getElementById( "hidden_time" ).value = difference; 
         document.getElementById("quiz_index").textContent = quiz_index;
-        document.getElementById("correct").textContent = correct;
+        document.getElementById( "hidden_correct" ).value = String(correct); 
         document.getElementById("pic").src = "end.png";
     }
       
 });
 
 
-console.log(quiz);
+// console.log(quiz);
+
+
 // 暗黒の雲の表示・非表示
 function set_field(){
     for(i=0; i < 8; i++){
@@ -202,6 +209,7 @@ document.getElementById("start").addEventListener('click',function(e){
     for(i= 0;i < 10; i++){
         document.getElementsByName("button")[i].style.opacity = 1;
     }
+    document.getElementById("start").style.opacity = 0;
     start_now = Date.now();
     console.log(start_now);
 });
@@ -211,4 +219,15 @@ function stop(){
     console.log(stop_now);
     difference = stop_now - start_now;
     difference = (difference/1000).toPrecision(2);
+}
+
+//送信時のチェック
+function check(){
+    if (document.getElementsByName('name')[0].value!='') {
+        return true;
+    }
+    else{
+        window.alert('名前を入力してください');
+        return false;
+    }
 }

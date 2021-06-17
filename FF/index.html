@@ -62,33 +62,38 @@
     </div>
 
     <br>
-    <button name="button" value="1" >1</button>
-    <button name="button" value="2">2</button>
-    <button name="button" value="3">3</button>
-    <button name="button" value="4">4</button>
-    <button name="button" value="5">5</button>
-    <button name="button" value="6">6</button>
-    <button name="button" value="7">7</button>
-    <button name="button" value="8">8</button>
-    <button name="button" value="なし" id="not">逃げ場なし</button>
-    <br>
-    <button name="button" value="next" id="next">次の問題</button>
-
-    <form method="POST" action="dbc.php">
+    <div class="button">
+        <button name="button" value="1" >1</button>
+        <button name="button" value="2">2</button>
+        <button name="button" value="3">3</button>
+        <button name="button" value="4">4</button>
+        <button name="button" value="5">5</button>
+        <button name="button" value="6">6</button>
+        <button name="button" value="7">7</button>
+        <button name="button" value="8">8</button>
+        <button name="button" value="なし" id="not">逃げ場なし</button>
         <br>
-        <div>問題が終わったら↓</div>
-        <div>名前
-        <input type="text" name = 'name'>
-        <input type="hidden" name="hidden_correct" id='hidden_correct' value="0">
-        <input type="hidden" name="hidden_time" id='hidden_time' value="0">
-        <input type="submit">
+        <button name="button" value="next" id="next">次の問題</button>
+    </div>
+    
+    
+    <form method="POST" action="dbc.php" onSubmit="return check()">
+        <div class='form'>
+            <p>名前
+            <input type="text" name = 'name' >
+            <input type="hidden" name="hidden_correct" id='hidden_correct' value="0">
+            <input type="hidden" name="hidden_time" id='hidden_time' value="0">
+            <br>
+            <input type="submit" name="submit" value="ランキングを見る">
+        </div>
+        
         
     
     </form>
 
-    <form action="runking.php">
+    <!-- <form action="runking.php">
         <input type="submit" value='ランキングを見る'>
-    </form>
+    </form> -->
 
     
     <script src="index.js?date=210607"></script>

@@ -117,10 +117,14 @@ body {
   transform: rotate( -45deg );
 }
 
-.time {
+.time ,.form{
   text-align:center;
 }
 
-button[name="button"] {
+.button {
+  text-align: center;
+}
+
+button[name="button"],.form {
   opacity: 0;
 }
